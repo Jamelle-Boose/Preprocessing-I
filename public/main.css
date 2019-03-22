@@ -134,6 +134,35 @@ html,
 body {
   height: 100%;
 }
-html {
-  background-color: red;
+.container {
+  max-width: 800px;
+  padding: 0 5vw;
+  margin: 10px auto;
+  width: 100%;
+}
+h1 {
+  color: red;
+}
+a {
+  color: purple;
+  text-decoration: none;
+}
+a:hover {
+  color: #4d004d;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: row nowrap;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+header a {
+  margin: 0 5px;
+  font-size: 18px;
 }
