@@ -45,11 +45,19 @@
   }
 
   section {
-    .flex(@align: stretch);
+    .flex(stretch);
+
+    @media @phone {
+      flex-flow: column;
+    }
 
     div {
       width: 50%;
       padding: 15px 0;
+
+      @media @phone {
+        width: 100%;
+      }
       
 
       h1 {
