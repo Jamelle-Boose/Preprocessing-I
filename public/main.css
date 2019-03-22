@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 800px;
+  padding: 0 5vw;
+  margin: 10px auto;
+  width: 100%;
+  font-family: serif;
+}
+h1 {
+  color: black;
+}
+a {
+  color: #525252;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: row nowrap;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+header a {
+  margin: 0 5px;
+  font-size: 16px;
+}
+#index main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: lightgrey;
+  flex-direction: column;
+  padding: 50px 30px;
+}
+#index main img {
+  padding-bottom: 10px;
+}
+#index main h1:nth-of-type(1) {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+#index main h1:nth-of-type(2) {
+  font-size: 18px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed black;
+  width: 100%;
+}
+#index main p {
+  padding: 20px 0;
+}
+#index main button {
+  background-color: #6b6b6b;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 11px 30px;
+  text-decoration: none;
+}
+#index main button:hover {
+  background: white;
+  color: #6b6b6b;
+}
+#index section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+@media (max-width: 500px) {
+  #index section {
+    flex-flow: column;
+  }
+}
+#index section div {
+  width: 50%;
+  padding: 15px 0;
+}
+@media (max-width: 500px) {
+  #index section div {
+    width: 100%;
+  }
+}
+#index section div h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+#index section div h2 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+#index section div p {
+  padding-top: 10px;
+  padding-right: 50px;
+}
+#index section div ul {
+  border: 1px solid lightgrey;
+}
+#index section div li {
+  padding: 15px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid lightgrey;
+}
+#index section div li:nth-last-of-type(1) {
+  border-bottom: none;
+}
+#index footer h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid darkgrey;
+}
+#index footer table {
+  width: 100%;
+  margin-top: 10px;
+}
+#index footer table th {
+  text-align: left;
+  font-weight: bold;
+  padding: 10px 10px;
+  border-bottom: 1px solid grey;
+}
+#index footer table tr {
+  border-bottom: 1px solid grey;
+}
+#index footer table tr:nth-child(even) {
+  background-color: #e2e2e2;
+}
+#index footer table tr:nth-last-child(1) {
+  border-bottom: none;
+}
+#index footer table tr td {
+  text-align: left;
+  margin: 5px 0;
+  padding: 25px 10px;
+}
+#index footer table tr td:first-child {
+  font-weight: bold;
+}
+#index .copyright {
+  color: white;
+  background: #707070;
+  padding: 20px 0px 30px;
+  margin-top: 30px;
+  text-align: center;
+}

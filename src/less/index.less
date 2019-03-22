@@ -1,0 +1,148 @@
+#index {
+
+  main {
+    .flex(@justify: space-between;  @align: flex-start);
+    background: lightgrey;
+    flex-direction: column;
+    padding: 50px 30px;
+
+    img {
+      padding-bottom: 10px;
+    }
+
+    h1:nth-of-type(1) {
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+
+    h1:nth-of-type(2) {
+      font-size: 18px;
+      padding-bottom: 30px;
+      border-bottom: 1px dashed black;
+      width: 100%;
+    }
+
+    p {
+      padding: 20px 0;
+    }
+
+    button {
+      background-color: rgb(107, 107, 107);
+      border:1px solid black;
+      display:inline-block;
+      cursor: pointer;
+      color:#ffffff;
+      font-size:15px;
+      font-weight:bold;
+      padding:11px 30px;
+      text-decoration:none;
+
+      &:hover {
+        background: white;
+        color: rgb(107, 107, 107);
+      }
+    }
+  }
+
+  section {
+    .flex(stretch);
+
+    @media @phone {
+      flex-flow: column;
+    }
+
+    div {
+      width: 50%;
+      padding: 15px 0;
+
+      @media @phone {
+        width: 100%;
+      }
+      
+
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+
+      p {
+        padding-top: 10px;
+        padding-right: 50px;
+      }
+
+      ul {
+        border: 1px solid lightgrey;
+      }
+
+      li {
+        padding: 15px 10px;
+        font-size: 14px;
+        border-bottom: 1px solid lightgrey;
+
+        &:nth-last-of-type(1) {
+          border-bottom: none;
+        }
+      }
+
+    }
+    
+  }
+
+  footer {
+
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      border-bottom: 1px solid darkgrey;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 10px;
+    
+      th {
+        text-align: left;
+        font-weight: bold;
+        padding: 10px 10px;
+        border-bottom: 1px solid grey;
+      }
+  
+      tr {
+        border-bottom: 1px solid grey;
+       
+        &:nth-child(even) {
+          background-color: rgb(226, 226, 226);
+        }
+
+        &:nth-last-child(1) {
+          border-bottom: none;
+        }
+        td {
+          text-align: left;
+          margin: 5px 0;
+          padding: 25px 10px;
+          
+          &:first-child {
+            font-weight: bold;
+          }
+
+        }
+      }
+    }
+  }
+
+  .copyright {
+    color: white;
+    background: rgb(112, 112, 112);
+    padding: 20px 0px 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
